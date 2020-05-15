@@ -1,0 +1,43 @@
+@import "../../styles/shared/colors";
+
+.button {
+    margin: 8px 5px;
+    padding: 7px 8px;
+
+    border: none;
+    border-radius: 5px;
+    
+    outline: none;
+
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: none;
+    text-transform: uppercase;
+
+    &.primary {
+        background-color: $c_minsk;
+        color: $c_white;
+    }
+
+    &.secondary {
+        background-color: $color_electricViolet;
+        color: $c_white;
+    }
+
+    &:not(:disabled) {
+        &.active,
+        &:hover {
+            background: $c_white;
+            color: $c_minsk;
+            cursor: pointer;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    
+
+}
