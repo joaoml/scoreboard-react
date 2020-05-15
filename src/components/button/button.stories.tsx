@@ -1,6 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import Button from './Button';
+import { ButtonTypeEnum } from './ButtonTypeEnum';
 
 
 export default {
@@ -17,7 +18,7 @@ export const Default = () => <Button {...baseData} />;
 
 const secondaryData = {
   ...baseData,
-  kind: 'secondary'
+  kind: ButtonTypeEnum.secondary
 }
 export const secondary = () => <Button {...secondaryData} />;
 

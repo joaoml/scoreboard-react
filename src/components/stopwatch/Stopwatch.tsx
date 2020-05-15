@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Stopwatch.module.scss";
+import Button from "../button/Button";
+import { ButtonTypeEnum } from "../button/ButtonTypeEnum";
 
 const Stopwatch = () => {
 
@@ -50,17 +52,16 @@ const Stopwatch = () => {
         <div className={styles.stopwatch}>
             <div className={styles.title}>Stopwatch</div>
             <span className={styles.time}>{getElapsedTimeFormatted(seconds)}</span>
-            <div className={styles.actions}>
-                <button
-                    className={`${styles.action} ${isRunning && styles.active}`}
-                    onClick={handleStopwatch}>
-                    {isRunning ? "Stop" : "Start"}
-                </button>
-                <button
-                    className={styles.action}
-                    onClick={handleReset}>
-                    Reset
-                    </button>
+            <div>
+                <Button
+                    label={isRunning ? "Stop" : "Start"}
+                    handleClick={handleStopwatch}
+                />
+                <Button
+                    label={"Reset"}
+                    handleClick={handleReset}
+                    kind={ButtonTypeEnum.secondary}
+                />
             </div>
         </div>
     );

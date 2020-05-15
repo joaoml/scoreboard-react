@@ -17,27 +17,4 @@
         letter-spacing: 2px;
     }
 
-    > .actions {
-        > .action {
-            margin: 8px 5px;
-            background-color: $c_minsk;
-            border-radius: 5px;
-            padding: 7px 8px;
-            border: none;
-            color: $c_white;
-            letter-spacing: 2px;
-            font-weight: bold;
-            text-shadow: none;
-            text-transform: uppercase;
-
-            outline: none;
-
-            &.active,
-            &:hover {
-                background: $c_white;
-                color: $c_minsk;
-                cursor: pointer;
-              }
-        }
-    }
 }

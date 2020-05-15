@@ -1,25 +1,26 @@
 import React from "react";
 import styles from "./Button.module.scss";
 import classNames from 'classnames/bind';
+import { ButtonTypeEnum } from "./ButtonTypeEnum";
 
-let cx = classNames.bind(styles);
+const cx = classNames.bind(styles);
 
 const Button = ({
     label,
     handleClick,
     disabled = false,
-    kind = 'primary'
+    kind = ButtonTypeEnum.primary
 }: {
     label: string,
     handleClick: Function,
     disabled?: boolean,
-    kind?: string
+    kind?: ButtonTypeEnum
 }) => {
     
     let buttonClass = cx({
         button: true,
-        primary: kind === 'primary',
-        secondary: kind === 'secondary'
+        primary: kind === ButtonTypeEnum.primary,
+        secondary: kind === ButtonTypeEnum.secondary
     });
 
     return (
