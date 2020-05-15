@@ -1,0 +1,12 @@
+.stats {
+    display: flex;
+    padding: 5px 10px;
+
+    td:first-child {
+        text-align: right;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 11px;
+    }
+    
+}

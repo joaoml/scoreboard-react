@@ -1,0 +1,43 @@
+@import "../../styles/shared/colors.scss";
+
+.stopwatch {
+    flex: 0 170px;
+
+    padding: 5px 10px;
+    
+    background-color: $c_blueViolet;
+
+    > .title {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    > .time {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    > .actions {
+        > .action {
+            margin: 8px 5px;
+            background-color: $c_minsk;
+            border-radius: 5px;
+            padding: 7px 8px;
+            border: none;
+            color: $c_white;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: none;
+            text-transform: uppercase;
+
+            outline: none;
+
+            &.active,
+            &:hover {
+                background: $c_white;
+                color: $c_minsk;
+                cursor: pointer;
+              }
+        }
+    }
+}

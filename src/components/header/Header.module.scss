@@ -1,0 +1,17 @@
+@import "../../styles/shared/colors.scss";
+
+.header {
+    display: flex;
+    align-items: center;
+    color: $c_white;
+    text-align: center;
+    background-color: $c_cornflowerBlue;
+    border-bottom: solid 2px $c_fog;
+
+    > .title {
+        flex: 1;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,40 @@
+.counter {
+    flex: 0 0 190px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+
+    > .action {
+        height: 100%;
+    border: none;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #B0AEBA;
+    background-color: #DCDCDC;
+    display: flex;
+    cursor: pointer;
+    flex: 0 1 40px;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: #fff;
+    }
+
+        &.decrement {
+              &:hover {
+                background: #EF5350;
+              }
+        }
+
+        &.increment {
+            &:hover {
+                background: #83D97C;
+              }
+        }
+    }
+}
