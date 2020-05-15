@@ -7,6 +7,7 @@ Some differences from the original app from Treehouse course:
 * React hooks;
 * Typescript;
 * CSS modules;
+* SCSS;
 * Storybook
 
 ## Available Scripts
