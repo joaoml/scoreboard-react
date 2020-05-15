@@ -15,20 +15,36 @@
     text-transform: uppercase;
 
     &.primary {
-        background-color: $c_minsk;
+        background-color: $color_denim;
+        border-color: $color_denim;
         color: $c_white;
+
+        &:not(:disabled) {
+            &.active,
+            &:hover {
+                background-color: $color_scienceBlue;
+                border-color: $color_scienceBlue;
+            }
+        }
     }
 
     &.secondary {
-        background-color: $color_electricViolet;
+        background-color: $c_minsk;
+        border-color: $c_minsk;
         color: $c_white;
+
+        &:not(:disabled) {
+            &.active,
+            &:hover {
+                background-color: $color_blueGem;
+                border-color: $color_blueGem;
+            }
+        }
     }
 
     &:not(:disabled) {
         &.active,
         &:hover {
-            background: $c_white;
-            color: $c_minsk;
             cursor: pointer;
         }
     }

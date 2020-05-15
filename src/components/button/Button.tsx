@@ -1,11 +1,31 @@
 import React from "react";
 import styles from "./Button.module.scss";
+import classNames from 'classnames/bind';
 
-const Button = ({ label, handleClick, isDisabled = false }: { label: string, handleClick: Function, isDisabled?: boolean }) => {
+let cx = classNames.bind(styles);
+
+const Button = ({
+    label,
+    handleClick,
+    disabled = false,
+    kind = 'primary'
+}: {
+    label: string,
+    handleClick: Function,
+    disabled?: boolean,
+    kind?: string
+}) => {
+    
+    let buttonClass = cx({
+        button: true,
+        primary: kind === 'primary',
+        secondary: kind === 'secondary'
+    });
+
     return (
         <button
-            className={styles.button}
-            disabled={isDisabled}
+            className={buttonClass}
+            disabled={disabled}
             onClick={() => handleClick()}>
             {label}
         </button>

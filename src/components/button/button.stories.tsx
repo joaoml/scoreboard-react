@@ -1,6 +1,5 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { addDecorator } from '@storybook/react';
 import Button from './Button';
 
 
@@ -9,16 +8,27 @@ export default {
   component: Button
 };
 
-const withTextData = {
+const baseData = {
   label: "test",
   handleClick: action("clicked")
 }
 
-export const WithText = () => <Button {...withTextData}/>;
+export const Default = () => <Button {...baseData} />;
 
-const isDisabledData = {
-  label: "test",
-  handleClick: action("clicked"),
-  isDisabled: true
+const secondaryData = {
+  ...baseData,
+  kind: 'secondary'
 }
-export const disabled = () => <Button {...isDisabledData}/>;
+export const secondary = () => <Button {...secondaryData} />;
+
+const disabledData = {
+  ...baseData,
+  disabled: true
+}
+export const disabled = () => <Button {...disabledData} />;
+
+const secondaryDisableData = {
+  ...secondaryData,
+  ...disabledData
+}
+export const secondaryDisabled = () => <Button {...secondaryDisableData} />;
