@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The scoreboard app was created based on the [React components course from Treehouse](https://github.com/facebook/create-react-app).
+The scoreboard app was created based on the [React components course from Treehouse](https://teamtreehouse.com/library/react-components).
 
 Some differences from the original app from Treehouse course:
 * Function components;
