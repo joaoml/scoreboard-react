@@ -10,7 +10,7 @@ const Counter = ({ score, changeScore }: { score: number, changeScore: Function 
                 onClick={() => changeScore(-1)}>-</button>
             <span className="score">{score}</span>
             <button
-                className={`${styles.action} ${styles.incremet}`}
+                className={`${styles.action} ${styles.increment}`}
                 onClick={() => changeScore(1)}>+</button>
         </div>
     );

@@ -1,3 +1,5 @@
+@import "../../styles/shared/colors";
+
 .counter {
     flex: 0 0 190px;
     
@@ -9,31 +11,31 @@
 
     > .action {
         height: 100%;
-    border: none;
-    font-size: 1.15em;
-    font-weight: bold;
-    color: #B0AEBA;
-    background-color: #DCDCDC;
-    display: flex;
-    cursor: pointer;
-    flex: 0 1 40px;
-    outline: none;
-    align-items: center;
-    justify-content: center;
+        border: none;
+        font-size: 1.15em;
+        font-weight: bold;
+        color: $color_spunPearl;
+        background-color: $color_alto;
+        display: flex;
+        cursor: pointer;
+        flex: 0 1 40px;
+        outline: none;
+        align-items: center;
+        justify-content: center;
 
-    &:hover {
-        color: #fff;
-    }
+        &:hover {
+            color: $c_white;
+        }
 
         &.decrement {
               &:hover {
-                background: #EF5350;
+                background: $color_persianRed;
               }
         }
 
         &.increment {
             &:hover {
-                background: #83D97C;
+                background: $color_denim;
               }
         }
     }
