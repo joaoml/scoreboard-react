@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Stopwatch.module.scss";
 import Button from "../button/Button";
-import { ButtonTypeEnum } from "../button/ButtonTypeEnum";
+import { ButtonKindEnum } from "../button/ButtonKindEnum";
 
 const Stopwatch = () => {
 
@@ -60,7 +60,7 @@ const Stopwatch = () => {
                 <Button
                     label={"Reset"}
                     handleClick={handleReset}
-                    kind={ButtonTypeEnum.secondary}
+                    kind={ButtonKindEnum.SECONDARY}
                 />
             </div>
         </div>

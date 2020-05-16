@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import styles from "./FormPlayer.module.scss";
+import { ButtonTypeEnum } from "../button/ButtonTypeEnum";
+import Button from "../button/Button";
+import { ButtonKindEnum } from "../button/ButtonKindEnum";
 
 const FormPlayer = ({ addPlayer }: { addPlayer: Function }) => {
 
@@ -24,10 +27,12 @@ const FormPlayer = ({ addPlayer }: { addPlayer: Function }) => {
                 required
             />
 
-            <input
-                className={styles.action}
-                type="submit"
-                value="Add player" />
+            <Button
+                label={"Add player"}
+                type={ButtonTypeEnum.SUBMIT}
+                kind={ButtonKindEnum.SECONDARY}
+                handleClick={()=>{}}
+                />
         </form>
     );
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import Button from './Button';
-import { ButtonTypeEnum } from './ButtonTypeEnum';
+import { ButtonKindEnum } from './ButtonKindEnum';
+import { ButtonLevelEnum } from './ButtonLevelEnum';
 
 
 export default {
@@ -18,18 +19,31 @@ export const Default = () => <Button {...baseData} />;
 
 const secondaryData = {
   ...baseData,
-  kind: ButtonTypeEnum.secondary
+  kind: ButtonKindEnum.SECONDARY
 }
-export const secondary = () => <Button {...secondaryData} />;
+export const Secondary = () => <Button {...secondaryData} />;
 
 const disabledData = {
   ...baseData,
   disabled: true
 }
-export const disabled = () => <Button {...disabledData} />;
+export const Disabled = () => <Button {...disabledData} />;
 
 const secondaryDisableData = {
   ...secondaryData,
   ...disabledData
 }
-export const secondaryDisabled = () => <Button {...secondaryDisableData} />;
+export const SecondaryDisabled = () => <Button {...secondaryDisableData} />;
+
+const unstyledData = {
+  ...baseData,
+  kind: ButtonKindEnum.UNSTYLED
+}
+export const Unstyled = () => <Button {...unstyledData} />;
+
+const unstyledDangerData = {
+  ...baseData,
+  kind: ButtonKindEnum.UNSTYLED,
+  level: ButtonLevelEnum.DANGER
+}
+export const UnstyledDanger = () => <Button {...unstyledDangerData} />;

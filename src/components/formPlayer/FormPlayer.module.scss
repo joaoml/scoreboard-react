@@ -31,19 +31,4 @@
             background-color: rgba(0, 0, 0, 0.2);
         }
     }
-
-    > .action {
-        display: flex;
-        font-size: .6em;
-        padding: 10px;
-        background-color: $c_minsk;
-        border-radius: 5px;
-        border: none;
-        color: $c_white;
-        letter-spacing: 2px;
-        font-weight: bold;
-        text-shadow: none;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
 }
