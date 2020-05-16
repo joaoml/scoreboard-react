@@ -4,12 +4,12 @@
     display: flex;
     align-items: center;
 
-    background-color: $c_cornflowerBlue;
+    background-color: $color_cornflowerBlue;
     
     padding: 15px 10px 15px 15px;
 
     ::placeholder {
-        color: $c_iron;
+        color: $color_iron;
     }
 
     > .name {
@@ -19,10 +19,10 @@
         border-width: 0 0 1px 0;
         padding: 10px;
         border-radius: 5px;
-        background-color: $c_blueViolet;
+        background-color: $color_blueViolet;
         border-style: none;
         text-shadow: none;
-        color: $c_white;
+        color: $color_white;
         letter-spacing: 2px;
         outline: none;
         margin-right: 10px;

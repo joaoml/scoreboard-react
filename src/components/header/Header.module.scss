@@ -3,10 +3,10 @@
 .header {
     display: flex;
     align-items: center;
-    color: $c_white;
+    color: $color_white;
     text-align: center;
-    background-color: $c_cornflowerBlue;
-    border-bottom: solid 2px $c_fog;
+    background-color: $color_cornflowerBlue;
+    border-bottom: solid 2px $color_fog;
 
     > .title {
         flex: 1;

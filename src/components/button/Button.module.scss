@@ -17,7 +17,7 @@
     &.primary {
         background-color: $color_denim;
         border-color: $color_denim;
-        color: $c_white;
+        color: $color_white;
 
         &:not(:disabled) {
             &.active,
@@ -29,9 +29,9 @@
     }
 
     &.secondary {
-        background-color: $c_minsk;
-        border-color: $c_minsk;
-        color: $c_white;
+        background-color: $color_minsk;
+        border-color: $color_minsk;
+        color: $color_white;
 
         &:not(:disabled) {
             &.active,
