@@ -1,9 +1,11 @@
+@import "../../styles/shared/colors.scss";
+
 .player {
     display: flex;
     align-items: center;
     height: 40px;
     font-size: 1.2em;
-    border-bottom: solid 2px #EEEEEE;
+    border-bottom: solid 2px $color_gallery;
     letter-spacing: 2px;
 
     > .details {
@@ -11,7 +13,7 @@
         
         overflow: hidden;
         display: flex;
-        color: #2f2366;
+        color: $color_jacarta;
     
         line-height: 3.5em;
         padding-left: 10px;

@@ -1,12 +1,14 @@
+@import "../styles/shared/colors.scss";
+
 .scoreboard {
     flex: 0 1 700px;
 
     display: flex;
     flex-direction: column;
 
-    background: #fff;
+    background: $color_white;
     margin: 70px auto;
-    box-shadow: 0 2px 0 #8568fa;
+    box-shadow: 0 2px 0 $color_cornflowerBlue;
     border-radius: 6px;
 
     > .main {
